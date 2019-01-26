@@ -3,6 +3,7 @@ package com.pm.GeoCachePortalV2Api.Controllers;
 import com.pm.GeoCachePortalV2Api.Models.GeoCache.DTO.GeoCacheCommonInfoDTO;
 import com.pm.GeoCachePortalV2Api.Models.GeoCache.GeoCache;
 import com.pm.GeoCachePortalV2Api.Repositories.GeoCacheRepository;
+import com.pm.GeoCachePortalV2Api.Services.GeoCacheService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -23,6 +24,9 @@ public class GeoCacheController {
     private GeoCacheRepository geoCacheRepository;
 
     @Autowired
+    private GeoCacheService geoCacheService;
+
+    @Autowired
     private ModelMapper modelMapper;
 
     @GetMapping("/geoCaches")
@@ -36,9 +40,19 @@ public class GeoCacheController {
         return commonInfoDTOS;
     }
 
+    @GetMapping("/userGeoCaches")
+    public Page<GeoCache> getGeaocachesForUser(){
+
+        geoCacheService.getGeoCachesForUser();
+
+        return null;
+    }
+
+
+
     @PostMapping("/geoCache")
     public GeoCache createGeoCache(@Valid @RequestBody GeoCache geoCache){
-        return geoCacheRepository.save(geoCache);
+        return geoCacheService.saveGeoCacheForCurrentUser(geoCache);
     }
 
 }

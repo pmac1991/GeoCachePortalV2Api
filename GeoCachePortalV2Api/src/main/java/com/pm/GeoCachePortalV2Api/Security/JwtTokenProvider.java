@@ -8,9 +8,8 @@ import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
-
 import com.pm.GeoCachePortalV2Api.Exceptions.CustomException;
-import ApplicationRole;
+import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.ApplicationRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
