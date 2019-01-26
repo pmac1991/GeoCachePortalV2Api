@@ -1,20 +1,16 @@
 package com.pm.GeoCachePortalV2Api.Controllers;
 
-import com.pm.GeoCachePortalV2Api.Dto.ApplicationUserResponseDTO;
-import com.pm.GeoCachePortalV2Api.Models.ApplicationRole;
-import com.pm.GeoCachePortalV2Api.Models.ApplicationUser;
-import com.pm.GeoCachePortalV2Api.Repositories.ApplicationUserRepository;
+import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.DTO.ApplicationUserResponseDTO;
+import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.ApplicationUser;
 import com.pm.GeoCachePortalV2Api.Services.ApplicationUserService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.modelmapper.ModelMapper;
 
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("/users")

@@ -1,7 +1,7 @@
 package com.pm.GeoCachePortalV2Api.Services;
 
 import com.pm.GeoCachePortalV2Api.Exceptions.CustomException;
-import com.pm.GeoCachePortalV2Api.Models.ApplicationUser;
+import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.ApplicationUser;
 import com.pm.GeoCachePortalV2Api.Repositories.ApplicationUserRepository;
 import com.pm.GeoCachePortalV2Api.Security.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;

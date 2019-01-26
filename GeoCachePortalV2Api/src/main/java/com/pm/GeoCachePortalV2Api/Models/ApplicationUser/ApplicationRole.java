@@ -1,4 +1,4 @@
-package com.pm.GeoCachePortalV2Api.Models;
+package com.pm.GeoCachePortalV2Api.Models.ApplicationUser;
 
 import org.springframework.security.core.GrantedAuthority;
 

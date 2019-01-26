@@ -1,6 +1,8 @@
-package com.pm.GeoCachePortalV2Api.Models;
+package com.pm.GeoCachePortalV2Api.Models.GeoCache;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.ApplicationUser;
+import com.pm.GeoCachePortalV2Api.Models.AuditModel;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.OnDelete;

@@ -1,6 +1,6 @@
 package com.pm.GeoCachePortalV2Api.Security;
 
-import com.pm.GeoCachePortalV2Api.Models.ApplicationUser;
+import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.ApplicationUser;
 import com.pm.GeoCachePortalV2Api.Repositories.ApplicationUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
