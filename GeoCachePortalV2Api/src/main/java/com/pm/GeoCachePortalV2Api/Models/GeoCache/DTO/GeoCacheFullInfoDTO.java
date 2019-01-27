@@ -1,6 +1,5 @@
 package com.pm.GeoCachePortalV2Api.Models.GeoCache.DTO;
 
-import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.ApplicationUser;
 import com.pm.GeoCachePortalV2Api.Models.ApplicationUser.DTO.ApplicationUserDataDTO;
 import com.pm.GeoCachePortalV2Api.Models.GeoCache.Tag;
 import lombok.Data;
@@ -8,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class GeoCacheCommonInfoDTO {
+public class GeoCacheFullInfoDTO {
 
     private Long id;
 
@@ -21,5 +20,9 @@ public class GeoCacheCommonInfoDTO {
     private List<ApplicationUserDataDTO> visitors;
 
     private ApplicationUserDataDTO creator;
+
+    private String geoLat;
+
+    private String geoLong;
 
 }

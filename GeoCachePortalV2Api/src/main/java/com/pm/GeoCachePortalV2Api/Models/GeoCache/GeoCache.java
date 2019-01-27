@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.persistence.*;
 import java.util.List;
@@ -16,6 +17,8 @@ import java.util.List;
 public class GeoCache extends AuditModel {
 
     @Id
+    @Getter
+    @Setter
     @GeneratedValue(generator = "geocache_generator")
     @SequenceGenerator(
             name = "geocache_generator",
